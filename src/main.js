@@ -34,6 +34,8 @@ axios.interceptors.request.use(config => {
 Vue.prototype.$http = axios
 // 将弹框提示组件挂在为Vue的原型属性
 Vue.prototype.$message = ElementUI.Message
+// 挂载弹框组件
+Vue.prototype.$confirm = ElementUI.MessageBox.confirm
 
 
 /* eslint-disable no-new */
